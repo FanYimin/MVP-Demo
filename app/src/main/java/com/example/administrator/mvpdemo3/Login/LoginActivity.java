@@ -1,5 +1,6 @@
-package com.example.administrator.mvpdemo3;
+package com.example.administrator.mvpdemo3.Login;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -8,8 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.administrator.mvpdemo3.Presenter.LoginPresenter;
-import com.example.administrator.mvpdemo3.View.LoginView;
+import com.example.administrator.mvpdemo3.LoadNews.View.MainActivity;
+import com.example.administrator.mvpdemo3.Login.Presenter.LoginPresenter;
+import com.example.administrator.mvpdemo3.Login.View.LoginView;
+import com.example.administrator.mvpdemo3.R;
 
 public class LoginActivity extends AppCompatActivity implements LoginView {
     EditText etName, etPass;
@@ -54,6 +57,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     @Override
     public void loginSuccess() {
         Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
 
     @Override

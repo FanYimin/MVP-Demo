@@ -1,10 +1,10 @@
-package com.example.administrator.mvpdemo3.Presenter;
+package com.example.administrator.mvpdemo3.Login.Presenter;
 
-import com.example.administrator.mvpdemo3.Model.ModelUser;
-import com.example.administrator.mvpdemo3.Model.ModelUserImpl;
-import com.example.administrator.mvpdemo3.Model.OnLoginListener;
-import com.example.administrator.mvpdemo3.Model.UserBean;
-import com.example.administrator.mvpdemo3.View.LoginView;
+import com.example.administrator.mvpdemo3.Login.Model.ModelUser;
+import com.example.administrator.mvpdemo3.Login.Model.ModelUserImpl;
+import com.example.administrator.mvpdemo3.Login.Model.OnLoginListener;
+import com.example.administrator.mvpdemo3.Login.Model.UserBean;
+import com.example.administrator.mvpdemo3.Login.View.LoginView;
 
 /**
  * Created by Administrator on 2016/12/15.
